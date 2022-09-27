@@ -9,9 +9,9 @@ contract Allowlist {
     // if an address is allowlisted, we would set it to true, it is false by default for all other addresses
     mapping(address => bool) public allowlistedAddresses;
 
-    // numAddressesallowlisted would be used to keep track of how many addresses have been allowlisted
+    // numAddressesWhitelisted would be used to keep track of how many addresses have been allowlisted
     // NOTE: Don't change this variable name, as it will be part of verification
-    uint8 public numAddressesAllowlisted;
+    uint8 public numAddressesWhitelisted;
 
     // user will input the maximum number of addresses to be allowlisted at time of deployment
     constructor(uint8 _maxAllowlistedAddresses) {
@@ -27,16 +27,16 @@ contract Allowlist {
             !allowlistedAddresses[msg.sender],
             "Wallet address has already been allowlisted"
         );
-        // checking if the numAddressesAllowlisted < maxAllowlistedAddresses, throws an error if not
+        // checking if the numAddressesWhitelisted < maxAllowlistedAddresses, throws an error if not
         require(
-            numAddressesAllowlisted < maxAllowlistedAddresses,
+            numAddressesWhitelisted < maxAllowlistedAddresses,
             "More wallet addresses cannot be added, maximum number allowed reached"
         );
         // add the address which called the function to the allowlisted address array
         allowlistedAddresses[msg.sender] = true;
         // increments the number of allowlisted addresses by 1
-        numAddressesAllowlisted += 1;
+        numAddressesWhitelisted += 1;
     }
 }
 
-// Allowlist Contract Address: 0x3414608de0EF06aB26e0E4E3b347C9BF5B380B41
+// Allowlist Contract Address: 0x3baED1184fAEC1884C1EFBBACBa4bBBbf8ddD3Ed
