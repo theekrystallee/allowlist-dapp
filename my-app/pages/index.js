@@ -156,14 +156,14 @@ export default function Home() {
       } else {
         return (
           <button onClick={addAddressToAllowlist} className={styles.button}>
-            Join DevDate Allowlist
+            Join Allowlist
           </button>
         );
       }
     } else {
       return (
         <button onClick={connectWallet} className={styles.button}>
-          Connect your wallet!
+          Connect Wallet
         </button>
       );
     }
