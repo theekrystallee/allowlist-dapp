@@ -141,7 +141,7 @@ export default function Home() {
         <div>
           <h1 className={styles.title}>Welcome to Dev N Date!</h1>
           <div className={styles.description}>
-            An NFT collection for developers interested in D_D dating show &#10084;
+            An NFT collection for devs interested in the D_D dating show &#10084;
           </div>
           <div className={styles.description}>
             {numberOfAllowlisted} have already joined the DevDate allowlist
