@@ -1,1 +1,2 @@
-# allowlist-dapp
+# Allowlist DApp For NFT Collection
+
