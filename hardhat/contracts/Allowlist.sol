@@ -40,3 +40,4 @@ contract Allowlist {
 }
 
 // Allowlist Contract Address: 0x3baED1184fAEC1884C1EFBBACBa4bBBbf8ddD3Ed
+// Allowlist Contract Address: 0x3d4Bc807eb6956c686d911a4C1FD00845C687227
