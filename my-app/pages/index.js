@@ -37,9 +37,9 @@ export default function Home() {
 
     // ff user is not connected to the Mumbai network, throw an error
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 4) {
+    if (chainId !== 80001) {
       window.alert("Change the network to MUMBAI");
-      // throw new error("Change network to MUMBAI!");
+      throw new error("Change network to MUMBAI!");
     }
 
     if (needSigner) {
